@@ -8,3 +8,7 @@ document.getElementById('url-form').addEventListener('submit', function (e) {
     console.log('Short URL:', shortUrl);
     // Here you will later send a request to your backend to save the URL
 });
+
+git add .
+git commit -m "Initial commit: Add landing, login, and signup pages"
+git push origin main
