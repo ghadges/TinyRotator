@@ -1,0 +1,13 @@
+{
+  "name": "tinyrotator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.7.0"
+  }
+}
