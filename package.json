@@ -11,3 +11,10 @@
     "mongoose": "^8.7.0"
   }
 }
+{
+  "name": "tinyrotator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT", // Add this line
+  ...
+}
