@@ -1,14 +1,21 @@
 {
-  "name": "nodejs-sandbox",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node --watch index.js"
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.0",
+    "@supabase/supabase-js": "^2.39.0",
+    "next": "^14.1.0",
+    "prisma": "^5.9.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@prisma/client": "^5.9.1"
   },
-  "keywords": [],
-  "author": "Ives van Hoorne",
-  "license": "MIT",
-  "devDependencies": {},
-  "dependencies": {}
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:seed": "node prisma/seed.js"
+  }
 }

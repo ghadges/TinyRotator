@@ -1,0 +1,17 @@
+// Database schema
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("POSTGRES_PRISMA_URL") // Connection-pooled URL
+}
+
+model Link {
+  id         String   @id @default(uuid())
+  url        String
+  weight     Int
+  short_code String   @unique
+  created_at DateTime @default(now())
+}
